@@ -1,6 +1,8 @@
+# Android course
+
 https://developer.android.com/courses/fundamentals-training/toc-v2
 
-Lesson 1: Build your first app
+## Lesson 1: Build your first app
 
 1.1: Android Studio and Hello World ✔
 
@@ -12,7 +14,7 @@ Lesson 1: Build your first app
 
 1.4: Learn to help yourself
 
-Lesson 2: Activities and intents
+## Lesson 2: Activities and intents
 
 2.1: Activities and intents
 
@@ -20,7 +22,7 @@ Lesson 2: Activities and intents
 
 2.3: Implicit intents
 
-Lesson 3: Testing, debugging, and using support libraries
+## Lesson 3: Testing, debugging, and using support libraries
 
 3.1: The debugger
 
@@ -28,9 +30,9 @@ Lesson 3: Testing, debugging, and using support libraries
 
 3.3: Support libraries
 
-Unit 2: User experience
+## Unit 2: User experience
 
-Lesson 4: User interaction
+## Lesson 4: User interaction
 
 4.1: Clickable images
 
@@ -42,7 +44,7 @@ Lesson 4: User interaction
 
 4.5: RecyclerView
 
-Lesson 5: Delightful user experience
+## Lesson 5: Delightful user experience
 
 5.1: Drawables, styles, and themes
 
@@ -50,13 +52,13 @@ Lesson 5: Delightful user experience
 
 5.3: Adaptive layouts
 
-Lesson 6:Testing your UI
+## Lesson 6:Testing your UI
 
 6.1: Espresso for UI testing
 
-Unit 3: Working in the background
+## Unit 3: Working in the background
 
-Lesson 7: Background tasks
+## Lesson 7: Background tasks
 
 7.1: AsyncTask
 
@@ -64,7 +66,7 @@ Lesson 7: Background tasks
 
 7.3: Broadcast receivers
 
-Lesson 8: Alarms and schedulers
+## Lesson 8: Alarms and schedulers
 
 8.1: Notifications
 
@@ -72,15 +74,15 @@ Lesson 8: Alarms and schedulers
 
 8.3: JobScheduler
 
-Unit 4: Saving user data
+## Unit 4: Saving user data
 
-Lesson 9: Preferences and settings
+## Lesson 9: Preferences and settings
 
 9.1: Shared preferences
 
 9.2: App settings
 
-Lesson 10: Storing data with Room
+## Lesson 10: Storing data with Room
 
 10.1 Part A: Room, LiveData, and ViewModel
 
