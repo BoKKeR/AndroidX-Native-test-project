@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.otto.ui.calendar.CalendarFragment"
+        android:label="@string/menu_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.otto.ui.jobs.JobsFragment"
+        android:label="@string/menu_jobs"
+        tools:layout="@layout/fragment_jobs" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.otto.ui.billing.BillingFragment"
+        android:label="@string/menu_billing"
+        tools:layout="@layout/fragment_billing" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.otto.ui.employees.EmployeesFragment"
+        android:label="@string/menu_employees"
+        tools:layout="@layout/fragment_employees" />
+</navigation>
