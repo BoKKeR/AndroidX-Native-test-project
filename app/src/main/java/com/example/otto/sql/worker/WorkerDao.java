@@ -22,5 +22,5 @@ public interface WorkerDao {
     void delete(Worker worker);
 
     @Query("SELECT * FROM worker_table ORDER BY priority DESC")
-    LiveData<List<Worker>> getAllJobs();
+    LiveData<List<Worker>> getAllWorkers();
 }

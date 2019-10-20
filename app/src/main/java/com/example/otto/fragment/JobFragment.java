@@ -111,11 +111,10 @@ public class JobFragment extends Fragment {
             Job job = new Job(title, description, priority);
             jobViewModel.insert(job);
 
-            //Toast.makeText(this, "Worker saved", Toast.LENGTH_LONG).show();
         } else if (requestCode == EDIT_JOB_REQUEST && resultCode == RESULT_OK) {
             int id = data.getIntExtra(AddEditJobActivity.EXTRA_ID, -1);
             if (id == -1) {
-                //Toast.makeText(this, "Worker cant be updated", Toast.LENGTH_LONG);
+
                 return;
             }
 
@@ -127,9 +126,7 @@ public class JobFragment extends Fragment {
             job.setId(id);
 
             jobViewModel.update(job);
-           // Toast.makeText(this, "Worker updated", Toast.LENGTH_LONG).show();
-        } else {
-            //Toast.makeText(this, "Worker not saved", Toast.LENGTH_LONG).show();
+
         }
     }
 }

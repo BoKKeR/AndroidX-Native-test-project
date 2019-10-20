@@ -11,13 +11,13 @@ import java.util.List;
 public class WorkerViewModel extends AndroidViewModel {
 
     private WorkerRepository repository;
-    private LiveData<List<Worker>> allJobs;
+    private LiveData<List<Worker>> allWorkers;
 
 
     public WorkerViewModel(@NonNull Application application) {
         super(application);
         repository = new WorkerRepository(application);
-        allJobs = repository.getAllJobs();
+        allWorkers = repository.getAllWorkers();
     }
 
     public void insert(Worker worker) {
@@ -33,7 +33,7 @@ public class WorkerViewModel extends AndroidViewModel {
         repository.delete(worker);
     }
 
-    public LiveData<List<Worker>> getAllJobs() {
-        return allJobs;
+    public LiveData<List<Worker>> getAllWorkers() {
+        return allWorkers;
     }
 }

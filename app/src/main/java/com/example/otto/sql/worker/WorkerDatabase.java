@@ -14,11 +14,11 @@ public abstract class WorkerDatabase extends RoomDatabase {
 
     private static WorkerDatabase instance;
 
-    public abstract WorkerDao jobDao();
+    public abstract WorkerDao workerDao();
 
     public static synchronized WorkerDatabase getInstance(Context context) {
         if(instance == null){
-            instance = Room.databaseBuilder(context.getApplicationContext(), WorkerDatabase.class, "job_database")
+            instance = Room.databaseBuilder(context.getApplicationContext(), WorkerDatabase.class, "worker_database")
                     .fallbackToDestructiveMigration()
                     .addCallback(roomCallback)
                     .build();
@@ -38,7 +38,7 @@ public abstract class WorkerDatabase extends RoomDatabase {
         private WorkerDao workerDao;
 
         private PopulateDbAsyncTask(WorkerDatabase db) {
-            workerDao = db.jobDao();
+            workerDao = db.workerDao();
         }
 
         @Override

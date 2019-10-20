@@ -13,20 +13,20 @@ import com.example.otto.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WorkerAdapter extends RecyclerView.Adapter  <WorkerAdapter.JobHolder>{
+public class WorkerAdapter extends RecyclerView.Adapter  <WorkerAdapter.WorkerHolder>{
     private List<Worker> workers = new ArrayList<>();
     private OnItemClickListener listener;
 
     @NonNull
     @Override
-    public JobHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public WorkerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.job_item, parent, false);
-        return new JobHolder(itemView);
+                .inflate(R.layout.worker_item, parent, false);
+        return new WorkerHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull JobHolder holder, int position) {
+    public void onBindViewHolder(@NonNull WorkerHolder holder, int position) {
         Worker currentWorker = workers.get(position);
         holder.textViewTitle.setText(currentWorker.getTitle());
         holder.textViewDescription.setText(currentWorker.getDescription());
@@ -43,16 +43,16 @@ public class WorkerAdapter extends RecyclerView.Adapter  <WorkerAdapter.JobHolde
         notifyDataSetChanged();
     }
 
-    public Worker getJobAt(int position) {
+    public Worker getWorkerAt(int position) {
         return workers.get(position);
     }
 
-    class JobHolder extends RecyclerView.ViewHolder {
+    class WorkerHolder extends RecyclerView.ViewHolder {
         private TextView textViewTitle;
         private TextView textViewDescription;
         private TextView textViewPriority;
 
-        public JobHolder(View itemView) {
+        public WorkerHolder(View itemView) {
             super(itemView);
             textViewTitle = itemView.findViewById(R.id.text_view_title);
             textViewDescription = itemView.findViewById(R.id.text_view_description);

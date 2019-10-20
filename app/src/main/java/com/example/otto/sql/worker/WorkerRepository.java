@@ -9,35 +9,35 @@ import java.util.List;
 
 public class WorkerRepository {
     private WorkerDao workerDao;
-    private LiveData<List<Worker>> allJobs;
+    private LiveData<List<Worker>> allWorkers;
 
     public WorkerRepository(Application application) {
         WorkerDatabase database = WorkerDatabase.getInstance(application);
-        workerDao = database.jobDao();
-        allJobs = workerDao.getAllJobs();
+        workerDao = database.workerDao();
+        allWorkers = workerDao.getAllWorkers();
 
     }
 
     public void insert(Worker worker) {
-        new InsertJobAsyncTask(workerDao).execute(worker);
+        new InsertWorkerAsyncTask(workerDao).execute(worker);
     }
 
     public void update(Worker worker){
-        new UpdateJobAsyncTask(workerDao).execute(worker);
+        new UpdateWorkerAsyncTask(workerDao).execute(worker);
     }
 
     public void delete(Worker worker) {
-        new DeleteJobAsyncTask(workerDao).execute(worker);
+        new DeleteWorkerAsyncTask(workerDao).execute(worker);
     }
 
-    public LiveData<List<Worker>> getAllJobs(){
-        return allJobs;
+    public LiveData<List<Worker>> getAllWorkers(){
+        return allWorkers;
     }
 
-    private static class InsertJobAsyncTask extends AsyncTask<Worker, Void, Void> {
+    private static class InsertWorkerAsyncTask extends AsyncTask<Worker, Void, Void> {
         private WorkerDao workerDao;
 
-        private InsertJobAsyncTask(WorkerDao workerDao){
+        private InsertWorkerAsyncTask(WorkerDao workerDao){
             this.workerDao = workerDao;
         }
 
@@ -48,10 +48,10 @@ public class WorkerRepository {
         }
     }
 
-    private static class UpdateJobAsyncTask extends AsyncTask<Worker, Void, Void> {
+    private static class UpdateWorkerAsyncTask extends AsyncTask<Worker, Void, Void> {
         private WorkerDao workerDao;
 
-        private UpdateJobAsyncTask(WorkerDao workerDao){
+        private UpdateWorkerAsyncTask(WorkerDao workerDao){
             this.workerDao = workerDao;
         }
 
@@ -62,10 +62,10 @@ public class WorkerRepository {
         }
     }
 
-    private static class DeleteJobAsyncTask extends AsyncTask<Worker, Void, Void> {
+    private static class DeleteWorkerAsyncTask extends AsyncTask<Worker, Void, Void> {
         private WorkerDao workerDao;
 
-        private DeleteJobAsyncTask(WorkerDao workerDao){
+        private DeleteWorkerAsyncTask(WorkerDao workerDao){
             this.workerDao = workerDao;
         }
 
