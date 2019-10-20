@@ -30,8 +30,8 @@ public class AddEditWorkerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_worker);
 
-        editTextTitle = findViewById(R.id.edit_text_title);
-        editTextDescription = findViewById(R.id.edit_text_description);
+        editTextTitle = findViewById(R.id.edit_first_name);
+        editTextDescription = findViewById(R.id.edit_last_name);
         numberPickerPriority = findViewById(R.id.number_picker_priority);
 
         numberPickerPriority.setMinValue(1);
@@ -54,17 +54,17 @@ public class AddEditWorkerActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.add_job_menu, menu);
+        menuInflater.inflate(R.menu.add_worker_menu, menu);
         return true;
     }
 
-    private void saveJob() {
+    private void saveWorker() {
         String title = editTextTitle.getText().toString();
         String description = editTextDescription.getText().toString();
         int priority = numberPickerPriority.getValue();
 
         if (title.trim().isEmpty() || description.trim().isEmpty()) {
-            Toast.makeText(this, "please insert a title and description", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "please insert a firstname and a lastname", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -86,8 +86,8 @@ public class AddEditWorkerActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()) {
-            case R.id.save_job:
-                saveJob();
+            case R.id.save_worker:
+                saveWorker();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
