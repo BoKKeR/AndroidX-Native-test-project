@@ -46,7 +46,7 @@ public class AddEditJobActivity extends AppCompatActivity {
             editTextDescription.setText(intent.getStringExtra(EXTRA_DESCRIPTION));
             numberPickerPriority.setValue(intent.getIntExtra(EXTRA_PRIORITY, 1));
         } else {
-            setTitle("Add Worker");
+            setTitle("Add job");
         }
 
     }

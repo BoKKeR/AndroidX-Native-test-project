@@ -28,7 +28,7 @@ public class AddEditWorkerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_job);
+        setContentView(R.layout.activity_add_worker);
 
         editTextTitle = findViewById(R.id.edit_text_title);
         editTextDescription = findViewById(R.id.edit_text_description);
@@ -41,7 +41,7 @@ public class AddEditWorkerActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         if (intent.hasExtra(EXTRA_ID)){
-            setTitle("Edit job");
+            setTitle("Edit Worker");
             editTextTitle.setText(intent.getStringExtra(EXTRA_TITLE));
             editTextDescription.setText(intent.getStringExtra(EXTRA_DESCRIPTION));
             numberPickerPriority.setValue(intent.getIntExtra(EXTRA_PRIORITY, 1));
