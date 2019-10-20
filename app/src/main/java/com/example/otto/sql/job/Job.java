@@ -1,4 +1,4 @@
-package com.example.otto;
+package com.example.otto.sql.job;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

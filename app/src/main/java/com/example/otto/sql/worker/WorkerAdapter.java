@@ -1,4 +1,4 @@
-package com.example.otto;
+package com.example.otto.sql.worker;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,11 +8,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.otto.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class JobAdapter extends RecyclerView.Adapter  <JobAdapter.JobHolder>{
-    private List<Job> jobs = new ArrayList<>();
+public class WorkerAdapter extends RecyclerView.Adapter  <WorkerAdapter.JobHolder>{
+    private List<Worker> workers = new ArrayList<>();
     private OnItemClickListener listener;
 
     @NonNull
@@ -25,24 +27,24 @@ public class JobAdapter extends RecyclerView.Adapter  <JobAdapter.JobHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull JobHolder holder, int position) {
-        Job currentJob = jobs.get(position);
-        holder.textViewTitle.setText(currentJob.getTitle());
-        holder.textViewDescription.setText(currentJob.getDescription());
-        holder.textViewPriority.setText(String.valueOf(currentJob.getPriority()));
+        Worker currentWorker = workers.get(position);
+        holder.textViewTitle.setText(currentWorker.getTitle());
+        holder.textViewDescription.setText(currentWorker.getDescription());
+        holder.textViewPriority.setText(String.valueOf(currentWorker.getPriority()));
     }
 
     @Override
     public int getItemCount() {
-        return jobs.size();
+        return workers.size();
     }
 
-    public void setJobs(List<Job> jobs) {
-        this.jobs = jobs;
+    public void setWorkers(List<Worker> workers) {
+        this.workers = workers;
         notifyDataSetChanged();
     }
 
-    public Job getJobAt(int position) {
-        return jobs.get(position);
+    public Worker getJobAt(int position) {
+        return workers.get(position);
     }
 
     class JobHolder extends RecyclerView.ViewHolder {
@@ -61,7 +63,7 @@ public class JobAdapter extends RecyclerView.Adapter  <JobAdapter.JobHolder>{
                 public void onClick(View view) {
                     int position = getAdapterPosition();
                     if (listener != null && position != RecyclerView.NO_POSITION){
-                        listener.onItemClick(jobs.get(position));
+                        listener.onItemClick(workers.get(position));
                     }
                 }
             });
@@ -69,7 +71,7 @@ public class JobAdapter extends RecyclerView.Adapter  <JobAdapter.JobHolder>{
     }
 
     public interface OnItemClickListener {
-        void onItemClick(Job job);
+        void onItemClick(Worker worker);
     }
 
     public void setOnItemClickListener (OnItemClickListener listener) {

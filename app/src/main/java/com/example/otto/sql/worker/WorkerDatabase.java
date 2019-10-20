@@ -1,4 +1,4 @@
-package com.example.otto;
+package com.example.otto.sql.worker;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -9,16 +9,16 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-@Database(entities = Job.class, version = 1, exportSchema = false)
-public abstract class JobDatabase extends RoomDatabase {
+@Database(entities = Worker.class, version = 1, exportSchema = false)
+public abstract class WorkerDatabase extends RoomDatabase {
 
-    private static JobDatabase instance;
+    private static WorkerDatabase instance;
 
-    public abstract JobDao jobDao();
+    public abstract WorkerDao jobDao();
 
-    public static synchronized JobDatabase getInstance(Context context) {
+    public static synchronized WorkerDatabase getInstance(Context context) {
         if(instance == null){
-            instance = Room.databaseBuilder(context.getApplicationContext(), JobDatabase.class, "job_database")
+            instance = Room.databaseBuilder(context.getApplicationContext(), WorkerDatabase.class, "job_database")
                     .fallbackToDestructiveMigration()
                     .addCallback(roomCallback)
                     .build();
@@ -26,7 +26,7 @@ public abstract class JobDatabase extends RoomDatabase {
     return instance;
     }
 
-    private static RoomDatabase.Callback roomCallback = new RoomDatabase.Callback() {
+    private static Callback roomCallback = new Callback() {
         @Override
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);
@@ -35,15 +35,15 @@ public abstract class JobDatabase extends RoomDatabase {
     };
 
     private static class PopulateDbAsyncTask extends AsyncTask<Void, Void, Void> {
-        private JobDao jobDao;
+        private WorkerDao workerDao;
 
-        private PopulateDbAsyncTask(JobDatabase db) {
-            jobDao = db.jobDao();
+        private PopulateDbAsyncTask(WorkerDatabase db) {
+            workerDao = db.jobDao();
         }
 
         @Override
         protected Void doInBackground(Void... voids) {
-            jobDao.insert(new Job("Title 1", "Description 1", 1));
+            workerDao.insert(new Worker("Title 1", "Description 1", 1));
             return null;
         }
     }

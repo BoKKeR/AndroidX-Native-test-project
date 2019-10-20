@@ -1,4 +1,4 @@
-package com.example.otto;
+package com.example.otto.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.otto.R;
 
 public class AddEditJobActivity extends AppCompatActivity {
 
@@ -44,7 +46,7 @@ public class AddEditJobActivity extends AppCompatActivity {
             editTextDescription.setText(intent.getStringExtra(EXTRA_DESCRIPTION));
             numberPickerPriority.setValue(intent.getIntExtra(EXTRA_PRIORITY, 1));
         } else {
-            setTitle("Add Job");
+            setTitle("Add Worker");
         }
 
     }

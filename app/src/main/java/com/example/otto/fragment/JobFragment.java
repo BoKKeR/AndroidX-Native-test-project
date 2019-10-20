@@ -1,15 +1,13 @@
-package com.example.otto;
+package com.example.otto.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -17,6 +15,11 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.otto.sql.job.Job;
+import com.example.otto.sql.job.JobAdapter;
+import com.example.otto.sql.job.JobViewModel;
+import com.example.otto.R;
+import com.example.otto.activity.AddEditJobActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
@@ -108,11 +111,11 @@ public class JobFragment extends Fragment {
             Job job = new Job(title, description, priority);
             jobViewModel.insert(job);
 
-            //Toast.makeText(this, "Job saved", Toast.LENGTH_LONG).show();
+            //Toast.makeText(this, "Worker saved", Toast.LENGTH_LONG).show();
         } else if (requestCode == EDIT_JOB_REQUEST && resultCode == RESULT_OK) {
             int id = data.getIntExtra(AddEditJobActivity.EXTRA_ID, -1);
             if (id == -1) {
-                //Toast.makeText(this, "Job cant be updated", Toast.LENGTH_LONG);
+                //Toast.makeText(this, "Worker cant be updated", Toast.LENGTH_LONG);
                 return;
             }
 
@@ -124,9 +127,9 @@ public class JobFragment extends Fragment {
             job.setId(id);
 
             jobViewModel.update(job);
-           // Toast.makeText(this, "Job updated", Toast.LENGTH_LONG).show();
+           // Toast.makeText(this, "Worker updated", Toast.LENGTH_LONG).show();
         } else {
-            //Toast.makeText(this, "Job not saved", Toast.LENGTH_LONG).show();
+            //Toast.makeText(this, "Worker not saved", Toast.LENGTH_LONG).show();
         }
     }
 }

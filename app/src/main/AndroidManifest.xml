@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".AddEditJobActivity"
-            android:parentActivityName=".MainActivity"
+            android:name=".activity.AddEditJobActivity"
+            android:parentActivityName=".activity.MainActivity"
             android:launchMode="singleTop"></activity>
-        <activity android:name=".MainActivity" android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".activity.MainActivity" android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

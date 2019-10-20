@@ -1,4 +1,4 @@
-package com.example.otto;
+package com.example.otto.sql.job;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
