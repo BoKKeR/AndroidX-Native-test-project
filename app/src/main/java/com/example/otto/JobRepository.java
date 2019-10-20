@@ -57,7 +57,7 @@ public class JobRepository {
 
         @Override
         protected Void doInBackground(Job... jobs) {
-            jobDao.insert(jobs[0]);
+            jobDao.update(jobs[0]);
             return null;
         }
     }
@@ -71,7 +71,7 @@ public class JobRepository {
 
         @Override
         protected Void doInBackground(Job... jobs) {
-            jobDao.insert(jobs[0]);
+            jobDao.delete(jobs[0]);
             return null;
         }
     }

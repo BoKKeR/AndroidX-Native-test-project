@@ -11,8 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JobAdaptor extends RecyclerView.Adapter  <JobAdaptor.JobHolder>{
+public class JobAdapter extends RecyclerView.Adapter  <JobAdapter.JobHolder>{
     private List<Job> jobs = new ArrayList<>();
+    private OnItemClickListener listener;
 
     @NonNull
     @Override
@@ -40,6 +41,10 @@ public class JobAdaptor extends RecyclerView.Adapter  <JobAdaptor.JobHolder>{
         notifyDataSetChanged();
     }
 
+    public Job getJobAt(int position) {
+        return jobs.get(position);
+    }
+
     class JobHolder extends RecyclerView.ViewHolder {
         private TextView textViewTitle;
         private TextView textViewDescription;
@@ -50,6 +55,25 @@ public class JobAdaptor extends RecyclerView.Adapter  <JobAdaptor.JobHolder>{
             textViewTitle = itemView.findViewById(R.id.text_view_title);
             textViewDescription = itemView.findViewById(R.id.text_view_description);
             textViewPriority = itemView.findViewById(R.id.text_view_priority);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int position = getAdapterPosition();
+                    if (listener != null && position != RecyclerView.NO_POSITION){
+                        listener.onItemClick(jobs.get(position));
+                    }
+                }
+            });
         }
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(Job job);
+    }
+
+    public void setOnItemClickListener (OnItemClickListener listener) {
+        this.listener = listener;
+
     }
 }
