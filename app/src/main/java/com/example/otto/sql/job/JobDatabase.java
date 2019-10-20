@@ -43,7 +43,7 @@ public abstract class JobDatabase extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            jobDao.insert(new Job("Title 1", "Description 1", 1));
+            jobDao.insert(new Job("ICA AB", "Change out the server rack with the servers. Pull new ethernet cables for each terminal and self shopping wifi kiosk AP. Job has to be done after the closing time.", 1));
             return null;
         }
     }

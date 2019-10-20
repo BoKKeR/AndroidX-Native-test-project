@@ -9,6 +9,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.otto.fragment.AboutFragment;
+import com.example.otto.fragment.CalendarFragment;
 import com.example.otto.fragment.JobFragment;
 import com.example.otto.R;
 import com.example.otto.fragment.WorkerFragment;
@@ -21,15 +23,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
+            case R.id.nav_calendar:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new CalendarFragment()).commit();
+                break;
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new JobFragment()).commit();
-
                 break;
-
             case R.id.nav_people:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new WorkerFragment()).commit();
+                break;
+            case R.id.nav_about:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new AboutFragment()).commit();
                 break;
         }
 
@@ -55,8 +63,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new JobFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_home);
+                    new CalendarFragment()).commit();
+            navigationView.setCheckedItem(R.id.nav_calendar);
         }
 
     }

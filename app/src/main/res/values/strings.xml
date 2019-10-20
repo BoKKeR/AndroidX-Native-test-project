@@ -2,4 +2,11 @@
     <string name="app_name">ElvisAb</string>
     <string name="navigation_draw_open">Open navigation drawer</string>
     <string name="navigation_draw_close">Close navigation drawer</string>
+<string name="loremIpsum">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Semper auctor neque vitae tempus quam. Massa id neque aliquam vestibulum morbi blandit cursus risus. Cras sed felis eget velit aliquet sagittis id. Diam sit amet nisl suscipit. Nulla facilisi morbi tempus iaculis urna id volutpat lacus. Sed odio morbi quis commodo odio aenean sed adipiscing. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Fringilla urna porttitor rhoncus dolor purus non enim. Ultricies mi eget mauris pharetra. Suscipit tellus mauris a diam maecenas sed. Aliquet nec ullamcorper sit amet risus nullam eget. Arcu risus quis varius quam quisque id diam vel. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Sit amet justo donec enim diam vulputate. In hendrerit gravida rutrum quisque. Aliquam vestibulum morbi blandit cursus risus. Justo nec ultrices dui sapien. Nisi porta lorem mollis aliquam ut.
+
+
+</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
