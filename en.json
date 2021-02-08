@@ -1,0 +1,878 @@
+{
+  "words": {
+    "version": "Version"
+  },
+  "a11y": {
+    "selected": "Selected",
+    "not_selected": "Not selected",
+    "back": "Back"
+  },
+  "alerts": {
+    "disable_account": {
+      "title": "Are you sure you want to disable Feelgood Plus?",
+      "buttons": {
+        "cancel": "No",
+        "continue": "Yes"
+      }
+    }
+  },
+  "settings": {
+    "change_language_card": {
+      "title": "Change language",
+      "body": "Our app is available in Swedish and English. Make your selection here.",
+      "picker": {
+        "options": {
+          "swedish": "Svenska",
+          "english": "English"
+        }
+      }
+    },
+    "about_card": {
+      "title": "About the app",
+      "body_before_terms_link": "By using this app you’ve approved our",
+      "terms_link": "terms of use"
+    },
+    "account_card": {
+      "activate": {
+        "bodyWithoutPartner": "This service will be disabled in {{days}} days. You can still use it as usual until then. If you change your mind, just reactive it.",
+        "bodyWithPartner": "You have disabled Feelgood Plus, but you can still use the service until the end of this month. Remember to tell your added partner about this.\n\nIf you change your mind, you can re-activate Feelgood Plus now or sign in later.",
+        "button": "Re-activate Feelgood Plus",
+        "stickerCounter": "{{daysAmount}} {{daysNumerus}} left",
+        "bodyEndDateLastDay": "Today is the last day you can use Feelgood Plus.",
+        "bodyWithEndDate": "Feelgood Plus will be disabled in {{days}} days. You can use the service until then. Re-activate if you change your mind.",
+        "bodyIsPartnerWithEndDate": "Feelgood Plus will be disabled in {{days}} days. You can use the service until then.",
+        "bodyIsPartnerEndDateLastDay": "Today is the last day you can use Feelgood Plus.",
+        "bodyIsPartnerWithoutEndDate": "Feelgood Plus will be disabled in {{days}} days. You can use the service until then.",
+        "is_closed": {
+          "body": "Feelgood Plus is disabled. You can activate and start using it whenever you like.",
+          "status": "Disabled",
+          "button": "Activate Feelgood Plus"
+        }
+      },
+      "disable": {
+        "title": "Feelgood Plus",
+        "bodyWithoutPartner": "If you disable this service now you can still use for the rest of the month. The same goes for your partner.",
+        "bodyWithPartner": "If you disable Feelgood Plus, you will still be able to use the service until the end of the month.\n\nThe service will be disabled for your added partner as well.",
+        "button": "Disable Feelgood Plus",
+        "status": "Active"
+      },
+      "partner": {
+        "title": "Partner personal identity number:",
+        "decline_button": "Remove this partner",
+        "accept_button": "Add your partner",
+        "form": {
+          "accept_button": "Add",
+          "decline_button": "Cancel"
+        }
+      }
+    },
+    "header": "Settings",
+    "sms_card": {
+      "title": "SMS notifications",
+      "body": "Contact your employer if you're not using this phone number:",
+      "checkbox": "Allow SMS notifications",
+      "info": "Won't affect Feelgood Plus notifications."
+    }
+  },
+  "inputs": {
+    "pid": {
+      "hint": "yyyymmddnnnn",
+      "label": "Personal identity number",
+      "errors": {
+        "bad_input": "Invalid personal identity number",
+        "underage": "You must be at least {{ageLimit}} years old"
+      },
+      "a11yHint": "personal identity number"
+    },
+    "partner_pid": {
+      "hint": "yyyymmddnnnn",
+      "label": "Partner personal identity number",
+      "errors": {
+        "bad_input": "Invalid personal identity number",
+        "underage": "Partner must be at least {{ageLimit}} years old"
+      },
+      "a11yHint": "partner personal identity number"
+    }
+  },
+  "error_messages": {
+    "force_logout": {
+      "title": "You've been signed out",
+      "body": "Due to inactivity, we've signed you out for security reasons. If you want to continue, please sign in again."
+    },
+    "login": {
+      "cancelled": {
+        "title": "Sign in cancelled",
+        "body": "Either you cancelled signing in or something went wrong with Mobile BankID."
+      },
+      "unauthorized": {
+        "title": "You are not registered",
+        "body": {
+          "text": "Either your employer has no agreement with Feelgood concerning any service in the app or they haven't informed us you're employed by them.\n\nIf your partner can access Feelgood Plus through her or his employer, your partner add you as a partner for you to get access to the service."
+        }
+      },
+      "unavailable_service": {
+        "title": "Sign in doesn't work",
+        "body": "You can't sign in at the moment. We're working on solving this issue. Try again later."
+      },
+      "no_connection": {
+        "title": "Unstable internet connection",
+        "body": "Your internet connection is too unstable for signing in. Please try again."
+      },
+      "underage": {
+        "title": "You are under {{ageLimit}}",
+        "body": "You have to be at least {{ageLimit}} years old to use this app."
+      }
+    }
+  },
+  "login_screen": {
+    "pid_external_device_toggle": "Mobile BankID on other device",
+    "buttons": {
+      "login_with_pid": "Sign in with Mobile BankID",
+      "about_bankid": "Mobile BankID"
+    }
+  },
+  "login_pending": {
+    "heading": "Launch the BankID app",
+    "body": "No rush, we're waiting...",
+    "buttons": {
+      "cancel": "Cancel sign in",
+      "back": "Go back"
+    }
+  },
+  "terms_and_conditions": {
+    "accept_toggle": "I accept the terms of use.",
+    "buttons": {
+      "continue": "Continue"
+    },
+    "heading": "Terms of use",
+    "body": {
+      "text": "This app works as the central place for your personal contacts with Feelgood. The type of contact you have with Feelgood depends on where you work, where your possible partner works, but also on your own choices.\n\nYou can sign in to the app if you're a registered user. That means we've received information from your employer or your partner that you have the right to use our app services. \n\nSome services and functions are activated immediately upon signing in, while others must be activate by yourself. You can deactivate services and functions you activated on your own whenever it suits you.\n\nTo be able to sign in, you need to accept our",
+      "link": "Terms of use"
+    }
+  },
+  "private_health": {
+    "heading": "Private health",
+    "nav_buttons": {
+      "request_operation": {
+        "title": "Apply for surgery",
+        "description": "We offer orthopaedic surgery at selected specialist clinics."
+      },
+      "private_healthcare": {
+        "title": "Your appointments",
+        "description": "Book digital health care for you and your family."
+      }
+    }
+  },
+  "request_operation": {
+    "heading": "Apply for surgery",
+    "body": "We can offer orthopedic surgery within two weeks through our business partner Swedish MedCare. Surgery is performed at selected specialist clinics in Riga, Latvia.\n\nSurgery in Latvia doesn’t cost anything extra compared to surgery in Sweden. However, travel expenses to and from Latvia aren’t covered. You can apply for surgery if you’ve received a referral in Sweden and have been put on the waiting list.",
+    "buttons": {
+      "continue": "Apply for surgery"
+    },
+    "info": {
+      "heading": "About Swedish MedCare",
+      "body": "Swedish MedCare is primarily owned by Swedish doctors and specialists.\n\nThey offer health care services via a network of carefully selected specialist clinics."
+    }
+  },
+  "private_healthcare_onboarding": {
+    "heading": "Appointment advice",
+    "body": "Appointments with general practitioners are held via video chat or text chat. Appointments with physiotherapists, personal trainers and health coaches are held via video chat.\n\nGeneral practitioners are available 24 hours a day. Other appointments must be made on weekdays between 8:00 and 17:00. You book everything using this app.\n\nYou won’t have to pay hospital fees for any digital visits.",
+    "buttons": {
+      "continue": "Your appointments (in Swedish)"
+    },
+    "info": {
+      "body": {
+        "info1": {
+          "title": "General practitioner",
+          "body": "For (video or chat) medical examinations and advice if you’re feeling unwell or are concerned about your health."
+        },
+        "info2": {
+          "title": "Psychologist",
+          "body": "For counselling during the acute phase, as well as an assessment as to whether you need further support."
+        },
+        "info3": {
+          "title": "Physiotherapist",
+          "body": "For injury assessments and rehabilitation advice about problems with your back, neck, muscles or joints."
+        },
+        "info4": {
+          "title": "Personal trainer",
+          "body": "To help you get started with your rehabilitation exercises or further develop them through treatment plans, motivational counselling and follow-ups."
+        },
+        "info5": {
+          "title": "Health coach",
+          "body": "Support and advice about your lifestyle, diet and sleep that gives you the opportunity to create good habits and a lasting change of lifestyle."
+        }
+      }
+    }
+  },
+  "bottom_navigation": {
+    "settings": "Settings",
+    "start": "Start",
+    "private_health": "Private health",
+    "company_health": "Booking"
+  },
+  "onboarding": {
+    "grid": {
+      "about": {
+        "heading": "Questions",
+        "subtitle": "About the app"
+      },
+      "exhaustion_quiz": {
+        "heading": "Exhaustion",
+        "subtitle": "Are you coping?"
+      },
+      "alcohol_quiz": {
+        "heading": "Drinking habits",
+        "subtitle": "Take our test"
+      },
+      "find_us_card": {
+        "heading": "Find us",
+        "subtitle": "All over Sweden"
+      }
+    },
+    "buttons": {
+      "login": "Sign in",
+      "login_undertext": "If you're a customer"
+    },
+    "customers": {
+      "health": {
+        "heading": "Digital private health",
+        "subtitle": "Feelgood Plus for you and your family. Working life and private life are linked."
+      },
+      "booking": {
+        "heading": "Manage your bookings",
+        "subtitle": "All you need to know about your occupational healthcare bookings."
+      },
+      "sub": "Contract determines access to services.",
+      "absence": {
+        "heading": "Report absence",
+        "subtitle": "Notify your employer when you're ill or taking care of your ill child."
+      }
+    },
+    "switch": {
+      "forAll": "Everyone",
+      "forCustomers": "Customers"
+    }
+  },
+  "find_us_screen": {
+    "heading": "Find us",
+    "search": {
+      "header": "Search clinic",
+      "undertext": "City, region or street address"
+    },
+    "result": {
+      "all": "All Feelgood clinics",
+      "foundOne": "{{amount}} clinic found",
+      "foundMany": "{{amount}} clinics found"
+    },
+    "bodyOne": "Feelgood covers all of Sweden.",
+    "bodyTwo": "Find out more about our clinics."
+  },
+  "place_screen": {
+    "header": "Information about the clinic",
+    "show_in_map": "View in map app"
+  },
+  "feelgood_plus_paused_screen": {
+    "heading": "Private health",
+    "body": {
+      "title": "Feelgood Plus is disabled",
+      "link": "terms of use",
+      "button": "Activate Feelgood Plus",
+      "pre_terms_text": "Via your employer you, your added partner, and your children have the possibility to use our digital health care and gain access to speedy orthopaedic surgery. \n\nThe Feelgood Plus services are free of charge.",
+      "terms_sentence_start": "If you want to use Feelgood Plus you have to accept",
+      "terms_sentence_link": "the terms of use",
+      "pre_terms_text_isPartner": "Via your partner, you have the possibility to use Feelgood Plus - digital health care and access to speedy orthopaedic surgery."
+    },
+    "button": "Activate Feelgood Plus",
+    "accept_terms_checkbox": "I accept the terms of use"
+  },
+  "start_screen": {
+    "company_card": {
+      "heading": "Booking",
+      "subtitle": "Occupational health"
+    },
+    "private_card": {
+      "heading": "Feelgood Plus",
+      "subtitle": "Private health"
+    },
+    "alcohol_card": {
+      "heading": "Drinking habits",
+      "subtitle": "Take our test"
+    },
+    "exhaustion_card": {
+      "heading": "Exhaustion",
+      "subtitle": "Are you coping?"
+    },
+    "find_us_card": {
+      "heading": "Find us",
+      "subtitle": "All over Sweden"
+    },
+    "about_card": {
+      "heading": "Questions",
+      "subtitle": "About the app"
+    },
+    "logout": "Sign out",
+    "welcome_heading": "Hi {{user}}!",
+    "absence_card": {
+      "heading": "Absence",
+      "subtitle": "Frisklinjen"
+    }
+  },
+  "bookings": {
+    "title": "Booking",
+    "heading": {
+      "title": "Bookings for occupational health.",
+      "help": "For private bookings, see",
+      "help_link": "Private health"
+    },
+    "booking": {
+      "time": {
+        "tomorrow": "Tomorrow",
+        "today": "Today",
+        "passed": "Passed",
+        "ongoing": "Now",
+        "soon": "Soon"
+      },
+      "button": "About this booking",
+      "more_info": "More info",
+      "video_start": "Open Feelgood Videobesök",
+      "service": {
+        "video": "in our app Videobesök",
+        "phone": "Phone meeting",
+        "videoInfo": "This appointment takes place in our other app Feelgood Videobesök."
+      },
+      "phone_start": "We will call you at the appointed time. Make sure to be available.",
+      "addToCalendar": {
+        "video": {
+          "location": "Video",
+          "notes": "*** The booking end time isn't exact. The video meeting will probably end sooner. ***"
+        },
+        "phone": {
+          "location": "Phone",
+          "notes": "*** The booking end time isn't exact. The phone call will probably end sooner. ***"
+        },
+        "visit": {
+          "notes": "*** The booking end time isn't exact. The visit will probably end sooner. ***"
+        },
+        "permission_denied": {
+          "title": "Calendar access denied",
+          "message": "Change calendar access in settings.",
+          "cancel_button": "Cancel",
+          "settings_button": "Open settings"
+        }
+      },
+      "remote": {
+        "body": "This appointment doesn't take place at a Feelgood clinic. Please call us if your employer or Feelgood hasn’t notified you of the location."
+      },
+      "video_download": "Get Feelgood Videobesök",
+      "video": {
+        "download": "Get Videobesök",
+        "start": "Open Videbesök"
+      },
+      "employee": {
+        "video": "Your visit with {{firstName}} {{lastName}} is done in the app Feelgood Videobesök.",
+        "phone": "{{firstName}} {{lastName}} will call you at this time. Make sure to be available.",
+        "visit": "You'll meet {{firstName}} {{lastName}}."
+      }
+    },
+    "empty_card": {
+      "title": "No bookings",
+      "body": "You currently don't have any bookings. Once you do, they'll be shown here."
+    },
+    "other": "Your other bookings",
+    "help_card": {
+      "title": "How to book",
+      "body": "You can't make a booking yourself in this app. Your boss or responsible party at your employer must make an order."
+    }
+  },
+  "title_header": {
+    "about_title": "Info"
+  },
+  "booking": {
+    "time_card": {
+      "calendar": "Add to calendar",
+      "door_code": "Door code {{doorCode}}.",
+      "door_code_singular": "door code"
+    },
+    "before_card": {
+      "title": "Information for your visit"
+    },
+    "cancel_card": {
+      "title": "Cancel or reschedule",
+      "body": "Call us to cancel or reschedule.",
+      "bodyIsSoon": "Your employer will be charged since the change is made this late.",
+      "button": {
+        "text": "Call {{number}}",
+        "cancel": "Unschedule",
+        "rebook": "Reschedule"
+      },
+      "hasPassed": "Did you miss your appointment? Talk to your employer to get a new booking.",
+      "cancellable": {
+        "description": "Cancelling or rescheduling is free until {{dateAmount}} {{dateFormat}} before the booking.",
+        "detailed": "Call us to cancel or reschedule.",
+        "isLate": "Call us to cancel or reschedule. Your employer will be charged since the change is made this late.",
+        "conditions": {
+          "withoutHolidays": "Weekends and national holidays not included."
+        }
+      }
+    },
+    "sick_warning": {
+      "body": "If you get common cold or respiratory symptoms, please contact us and we'll reschedule to a video meeting or a later date.",
+      "title": "Are you feeling ill?"
+    },
+    "cancel_popup": {
+      "yes": "Yes",
+      "no": "No",
+      "header": "Are you sure?"
+    }
+  },
+  "buttonComponent": {
+    "loading": "Loading..."
+  },
+  "number": {
+    "0": "zero",
+    "1": "one",
+    "2": "two",
+    "3": "three",
+    "4": "four",
+    "5": "five",
+    "6": "six",
+    "7": "seven",
+    "8": "eight",
+    "9": "nine",
+    "10": "ten"
+  },
+  "common": {
+    "day": {
+      "one": "day",
+      "other": "days"
+    },
+    "hour": {
+      "one": "hour",
+      "other": "hours"
+    },
+    "modals": {
+      "alert": {
+        "close": "Close"
+      }
+    },
+    "spinner": {
+      "waiting": "Waiting",
+      "loading": "Loading",
+      "submitting": "Submitting"
+    },
+    "terms": "Terms",
+    "done": "Done"
+  },
+  "absence_reporting": {
+    "Sick": {
+      "card": {
+        "companySuffix": "({{company}})",
+        "body": "You planned to be back\n{{date}}.",
+        "buttons": {
+          "edit": "Edit",
+          "finish": "End absence"
+        },
+        "title": {
+          "passed": "You have been ill and absent at {{extentPercent}}%",
+          "ongoing": "You're ill and absent at {{extentPercent}}%",
+          "future": "You will be ill and absent at {{extentPercent}}%"
+        }
+      }
+    },
+    "create": {
+      "header": "Absence",
+      "extent": {
+        "title": "Level of absence",
+        "choices": {
+          "one": "100%",
+          "two": "75%",
+          "three": "50%",
+          "four": "25%"
+        },
+        "subtitle": "You're absent at {{totalAbsence}}% these dates."
+      },
+      "start": {
+        "title": "First day not at work"
+      },
+      "inputDate": {
+        "date": "{{date}}",
+        "isTodayDate": "{{date}} (today), {{time}}",
+        "isTodayDateWithoutTime": "{{date}} (today)"
+      },
+      "end": {
+        "title": "Back at work"
+      },
+      "phone": {
+        "title": "Mobile phone number",
+        "subtitle": "For follow-ups and SMS notifications"
+      },
+      "Sick": {
+        "workRelated": {
+          "title": "Is your illness work-related?",
+          "choices": {
+            "one": "Yes",
+            "two": "No",
+            "three": "No reply"
+          },
+          "modal": {
+            "title": "Work-related?",
+            "body": "This means your reported illness is due to the physical or psychosocial work environment.",
+            "button": "Ok"
+          }
+        },
+        "cause": {
+          "title": "Reason for absence",
+          "subtitle": "Used for statistics",
+          "hide": "Hide reason for your boss",
+          "unselected": "No reason selected"
+        },
+        "done": {
+          "title": "Thanks for reporting!",
+          "body": "We'll notify Försäkringskassan about this."
+        },
+        "workplaceAccident": {
+          "title": "Is it due to a workplace accident?",
+          "choices": {
+            "one": "Yes",
+            "two": "No",
+            "three": "No reply"
+          }
+        }
+      },
+      "datePicker": {
+        "save": "Save and close",
+        "year": "Year {{year}}"
+      },
+      "callReporting": {
+        "button": "Call {{phone}}",
+        "title": "Call us",
+        "body": "We'll handle your reported absence for you."
+      },
+      "ChildBirthDate": {
+        "title": "Your child's birthdate"
+      },
+      "switch": {
+        "Sick": "Illness",
+        "CareOfChild": "Care of child"
+      },
+      "buttons": {
+        "CareOfChild": "Submit",
+        "Sick": "Submit"
+      },
+      "CareOfChild": {
+        "done": {
+          "title": "Thanks for reporting!",
+          "body": "Make sure to notify Försäkringskassan about this."
+        }
+      }
+    },
+    "finish": {
+      "Sick": {
+        "done": {
+          "title": "Glad you feel better!",
+          "body": "Welcome back to work."
+        },
+        "info": {
+          "title": "About your absence",
+          "body": "You reported illness from {{startDate}} with {{extentPercent}}% absence."
+        },
+        "button": "End absence"
+      },
+      "lastNonWorking": {
+        "title": "Last day not at work"
+      },
+      "startWorking": {
+        "title": "Back at work"
+      },
+      "CareOfChild": {
+        "done": {
+          "title": "Glad your child's better!",
+          "body": "Make sure to notify Försäkringskassan about this."
+        },
+        "info": {
+          "title": "About your absence",
+          "body": "You reported care of child from {{startDate}} with {{extentPercent}}% absence."
+        },
+        "button": "End absence"
+      }
+    },
+    "common": {
+      "buttons": {
+        "externalReporting": "To Försäkringskassan",
+        "toStart": "To Start"
+      },
+      "causes": {
+        "AllergySkin": "Allergy/Skin",
+        "ChestHeartVascular": "Chest/Heart/Vascular",
+        "HeadacheNeurologicalDisorders": "Headache/Neurological disorders",
+        "Infection": "Infection",
+        "FluSymptoms": "Flu symptoms",
+        "StomachIntestinalAbdomenInconvenience": "Stomach/Intestinal/Abdomen inconvenience",
+        "LowerRespiratoryTract": "Lower respiratory tract",
+        "EarNoseThroat": "Ear/Nose/Throat",
+        "MentalSocialHealth": "Mental/Social health",
+        "Musculo": "Musculo",
+        "Other": "Other",
+        "Eyes": "Eyes"
+      }
+    },
+    "edit": {
+      "changed": {
+        "title": "New level of absence valid from"
+      },
+      "Sick": {
+        "done": {
+          "title": "Thanks for editing!",
+          "body": "You can edit this report or end your absence whenever you want to."
+        },
+        "button": "Submit",
+        "header": "Edit report"
+      },
+      "CareOfChild": {
+        "done": {
+          "title": "Thanks for editing!",
+          "body": "Make sure to notify Försäkringskassan about this."
+        },
+        "button": "Submit",
+        "header": "Edit report"
+      },
+      "upcomingAbsence": {
+        "title": "Level of absence update",
+        "body": "{{upcomingDate}} your level of absence will be set to {{upcomingPercentage}}%."
+      },
+      "upcomingAbsenceDegree": {
+        "edit": {
+          "title": "Level of absence",
+          "iconButton": "Edit",
+          "body": {
+            "withoutUpcomingDegree": "Current level of absence is {{currentDegree}}%.",
+            "withUpcomingDegree": "From {{upcomingDate}} it'll be {{upcomingDegree}}%."
+          }
+        },
+        "fields": {
+          "degree": "New level of absence",
+          "date": "Date for new level of absence"
+        }
+      }
+    },
+    "choose_employeer": {
+      "title": "Select employer",
+      "unselected": "Nothing selected"
+    },
+    "warning": {
+      "maxNumberReports": {
+        "title": "Can't report more absence",
+        "body": {
+          "one": "You can only have two ongoing reported absences. End one of them and try again.",
+          "other": "You can only have two ongoing reported absences per employer. End one of them and try again."
+        }
+      },
+      "serviceUnavailable": {
+        "body": "Right now you can't report absence. We're working on solving this issue. Please try again later.",
+        "title": "Can't report absence"
+      },
+      "maxPercentage": {
+        "title": "Absence report failed",
+        "body": "You've already reported absence for these dates. This would result in a total absence over 100%.",
+        "button": "Edit your report"
+      },
+      "reachedMax": {
+        "title": "100% absence reported",
+        "body": "You've already reported 100% absence for these dates. Change dates or end your current absence."
+      },
+      "updateAvailable": {
+        "title": "Update the app",
+        "body": "There's a new and better version of this app to",
+        "linkAppleStore": "download from App Store",
+        "linkGoogleStore": "download from Google Play"
+      },
+      "loginUnavailable": {
+        "title": "Sign in doesn't work",
+        "body": "There're some issues we’re currently dealing with. Please try again later."
+      }
+    },
+    "CareOfChild": {
+      "card": {
+        "companySuffix": "({{company}})",
+        "body": "You planned to be back\n{{date}}.",
+        "buttons": {
+          "edit": "Edit",
+          "finish": "End absence"
+        },
+        "title": {
+          "ongoing": "Taking care of your child at {{extentPercent}}%",
+          "passed": "You were home with child at {{extentPercent}}%",
+          "future": "You plan to take care of child {{extentPercent}}%"
+        }
+      }
+    },
+    "card": {
+      "missingEstimatedDateBack": "Date for being back at work missing."
+    }
+  },
+  "privateHealth": {
+    "header": "Private health",
+    "navigate": {
+      "doctor": {
+        "title": "Meet a doctor",
+        "body": "Get medical attention at all hours and see an experienced doctor.",
+        "a11y": "Meet a doctor."
+      },
+      "psychologist": {
+        "title": "Meet a psychologist",
+        "body": "If you're over 18, you can see our experienced psychologists.",
+        "a11y": "See psychologist\nIf you're over 18, you can see our experienced psychologists."
+      },
+      "prescription": {
+        "title": "Renew recipies",
+        "body": "Renew recipes picked up within the last 15 months.",
+        "a11y": "Renew recipies\nRenew recipes picked up within the last 15 months."
+      },
+      "physio": {
+        "title": "Meet a physiotherapist",
+        "body": "Schedule a meeting with an experienced physiotherapist.",
+        "a11y": "See physiotherapist\nSchedule a meeting with an experienced physiotherapist."
+      },
+      "personalTrainer": {
+        "title": "Meet a personal trainer",
+        "body": "Schedule an online meeting with a personal trainer.",
+        "a11y": "See personal trainer\nSchedule an online meeting with a personal trainer."
+      },
+      "orthopedic": {
+        "title": "Orthopedic surgery",
+        "body": "Free of charge at selected specialist clinics in Latvia.",
+        "a11y": "Orthopedic surgery\nFree of charge at selected specialist clinics in Latvia."
+      },
+      "healthCoach": {
+        "body": "Schedule an online meeting with a health coach.",
+        "title": "Meet a health coach",
+        "a11y": "Meet a health coach.\nSchedule an online meeting with a health coach."
+      }
+    },
+    "terms": {
+      "body": "Via your employer you, your added partner, and your children have the possibility to use our digital health care and gain access to speedy orthopaedic surgery. \n\nThe Feelgood Plus services are free of charge.\n\nIf you want to use Feelgood Plus you have to accept",
+      "link": "terms of use",
+      "checkbox": "I approve the term of use.",
+      "button": "Activate Feelgood Plus",
+      "bodyAsPartner": "Via your partner, you have the possibility to use Feelgood Plus - digital health care and access to speedy orthopaedic surgery.\n\nIf you want to use Feelgood Plus you have to accept"
+    },
+    "info": {
+      "body": "Articles and advice at ",
+      "link": "feelgoodplus.se"
+    },
+    "image": {
+      "overImageText": {
+        "text": "Healthy at home. \nHealthy at work.",
+        "a11y": "Healthy at home. Healthy at work."
+      },
+      "a11y": "Smiling woman wearing a bicycle helmet out exercising in the woods."
+    }
+  },
+  "mapView": {
+    "a11y": {
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "reset": "Show clinic"
+    }
+  },
+  "setup": {
+    "title": "Setup",
+    "welcome": {
+      "knownUser": {
+        "title": "Hi {{name}}!",
+        "button": "Start",
+        "body": "Welcome to our app.\n\nSince this is your first time signing in, we need to inform you about certain things and ask you to perform a basic setup.\n\nOnce you've done this, future sign-ins will be much quicker.\n\nAll settings can be changed later."
+      },
+      "unidentifiedUser": {
+        "infoBlock": {
+          "title": "Received an activation code?",
+          "body": "If you've received an activation code from your employer, enter it in the next step in order to active your account."
+        },
+        "body": "Unfortunately we didn't find your account.\n\nYour employer might not have a contract with us or simply haven't informed us that you're employed by them.\n\nYour partner might also have forgotten to add you as their partner for Feelgood Plus.",
+        "button": "Enter activation code",
+        "title": "Hi {{name}}!"
+      }
+    },
+    "activationCode": {
+      "stepTitle": "Activation code",
+      "button": {
+        "activate": "Activate",
+        "confirm": "Confirm and continue"
+      },
+      "correct": {
+        "confirmationCard": {
+          "title": "Valid code for {{company}}",
+          "body": "Confirm that you're hired at {{company}}. Then you can use our services. If this isn't your employer, please enter a new code."
+        },
+        "iconButton": "Enter new activation code"
+      },
+      "incorrect": {
+        "warning": {
+          "title": "Code {{code}} is invalid",
+          "body": "Try again, maybe you misspelled."
+        }
+      },
+      "activationInfo": "Enter the activation code from your employer for activating your account.",
+      "inputContainer": {
+        "ally": "Activation code, six characters"
+      },
+      "failedToActivateUser": {
+        "warning": {
+          "title": "Enter your code again",
+          "body": "The connection to Feelgood was lost."
+        }
+      }
+    },
+    "appTerms": {
+      "stepTitle": "Terms of use",
+      "body": "This app works as the central place for your personal contacts with Feelgood. The type of contact you have with Feelgood depends on where you work, where your possible partner works, but also on your own choices.\n\nYou can sign in to the app if you're a registered user. That means we've received information from your employer or your partner that you have the right to use our app services.\n\nSome services and functions are activated immediately upon signing in, while others must be activate by yourself. You can deactivate services and functions you activated on your own whenever it suits you.\n\nTo be able to sign in, you need to accept our",
+      "link": "terms of use",
+      "button": "Continue",
+      "checkbox": "I approve the term of use."
+    },
+    "done": {
+      "stepTitle": "You're done!",
+      "button": "Close",
+      "card": {
+        "title": "Thank you very much!",
+        "body": "The app is ready to be used now.\nWelcome to Feelgood!"
+      }
+    },
+    "smsConsent": {
+      "stepTitle": "SMS notifications",
+      "allowLater": "Set this up later",
+      "button": "Allow and continue",
+      "body": "Sometimes we'll need to contact you concerning occupation healthcare matters. We'll use the mobile number below. Contact your employer if it's incorrect.",
+      "label": "Your mobile number:"
+    }
+  },
+  "spinner_connection_error": "Connecting to internet",
+  "login_connection_error": {
+    "heading": "Unstable internet connection",
+    "body": "Trying to sign in..."
+  },
+  "changeLanguage": {
+    "label": "På svenska"
+  },
+  "absence": {
+    "header": {
+      "title": "Absence",
+      "reportButton": "Report"
+    },
+    "noAbsence": {
+      "infoBlock": {
+        "title": "No absence",
+        "body": "You've got no ongoing or planned absence."
+      }
+    },
+    "create": {
+      "titleHeader": "Report absence"
+    },
+    "finish": {
+      "buttons": {
+        "showAbsences": "View your absence"
+      }
+    }
+  }
+}
