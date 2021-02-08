@@ -17,16 +17,6 @@
     }
   },
   "settings": {
-    "change_language_card": {
-      "title": "Change language",
-      "body": "Our app is available in Swedish and English. Make your selection here.",
-      "picker": {
-        "options": {
-          "swedish": "Svenska",
-          "english": "English"
-        }
-      }
-    },
     "about_card": {
       "title": "Om appen",
       "body_before_terms_link": "Eftersom du har loggat in har du godkänt våra",
