@@ -25,7 +25,7 @@
     },
     "account_card": {
       "activate": {
-        "bodyWithoutPartner": "This service will be disabled in {{days}} days. You can still use it as usual until then. If you change your mind, just reactive it.",
+        "bodyWithoutPartner": "no text lol",
         "bodyWithPartner": "You have disabled Feelgood Plus, but you can still use the service until the end of this month. Remember to tell your added partner about this.\n\nIf you change your mind, you can re-activate Feelgood Plus now or sign in later.",
         "button": "Re-activate Feelgood Plus",
         "stickerCounter": "{{daysAmount}} {{daysNumerus}} left",
